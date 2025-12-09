@@ -1,7 +1,5 @@
 import styles from './css/Elenco.module.css';
-import pedro from '../assets/images/pedro.jpg';
-import brunoHenrique from '../assets/images/brunoHenrique.jpg';
-import arrascaeta from '../assets/images/arrascaeta.jpg';
+import JogadorCard from "../components/JogadorCard";
 import felipe from '../assets/images/felipe.jpeg';
 
 export default function Elenco() {
@@ -68,18 +66,13 @@ export default function Elenco() {
 
       <div className={styles.playersGrid}>
         {jogadores.map((jogador, index) => (
-          <div key={index} className={styles.playerCard}>
-            <div 
-              className={styles.playerImage} 
-              style={{backgroundImage: `url(${jogador.imagem})`}}
-            >
-              <div className={styles.playerNumber}>{jogador.numero}</div>
-            </div>
-            <div className={styles.playerInfo}>
-              <h3 className={styles.playerName}>{jogador.nome}</h3>
-              <div className={styles.playerPosition}>{jogador.posicao}</div>
-            </div>
-          </div>
+        <JogadorCard 
+        key={index} 
+        nome={jogador.nome} 
+        posicao={jogador.posicao} 
+        numero={jogador.numero} 
+        imagem={jogador.imagem} 
+        />
         ))}
       </div>
 
