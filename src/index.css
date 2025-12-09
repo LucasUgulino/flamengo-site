@@ -1,0 +1,34 @@
+/* src/index.css */
+:root {
+  --flamengo-red: #c2081a;
+  --flamengo-black: #000000;
+  --flamengo-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--flamengo-white);
+  color: var(--flamengo-black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}

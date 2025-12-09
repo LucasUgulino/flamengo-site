@@ -1,0 +1,62 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #c2081a 70%, #000 100%); /* Gradiente rubro-negro */
+  color: #fff;
+}
+
+.App-logo {
+  height: 100px; /* Ajuste para logo do Flamengo */
+  pointer-events: none;
+  /* Removido: animação de rotação (não é adequada para um site profissional) */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: none; /* Desativado */
+  }
+}
+
+.App-header {
+  background-color: #c2081a; /* Vermelho flamengo */
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; /* Texto branco para contraste */
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.App-link {
+  color: white; /* Links brancos no header */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ffcc00; /* Dourado para efeito hover */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Adicione este estilo para o conteúdo principal (main) */
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: white;
+  color: #000;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo opcional para o rodapé */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+}
