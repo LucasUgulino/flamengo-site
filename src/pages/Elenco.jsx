@@ -1,6 +1,10 @@
 import styles from './css/Elenco.module.css';
 import JogadorCard from "../components/JogadorCard";
 import felipe from '../assets/images/felipe.jpeg';
+import pedro from '../assets/images/pedro.jpg';
+import brunoHenrique from '../assets/images/brunoHenrique.jpg';
+import arrascaeta from '../assets/images/arrascaeta.jpg';
+
 
 export default function Elenco() {
   const jogadores = [

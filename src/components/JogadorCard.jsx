@@ -1,5 +1,5 @@
 // src/components/JogadorCard.jsx
-import styles from '../pages/Elenco.module.css';
+import styles from '../pages/css/Elenco.module.css';
 
 export default function JogadorCard({ nome, posicao, numero, imagem }) {
   return (
